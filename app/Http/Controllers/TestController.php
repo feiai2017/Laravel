@@ -19,4 +19,13 @@ class TestController extends Controller
         $test->gender = 1;
         $test->save();
     }
+
+    public function getOne(Request $request) {
+        $id = $request->only(['id']);
+        $test = $request->input('id');
+        Log::debug('request: ' . json_encode($request));
+        Log::debug('id: ' . json_encode($id));
+        Log::debug('test: ' . json_encode($test));
+
+    }
 }

@@ -1913,9 +1913,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "First",
-  method: {}
+  data: function data() {
+    return {
+      user: {
+        id: 1
+      }
+    };
+  },
+  methods: {
+    onsubmit: function onsubmit() {
+      console.log(this.user);
+      axios.post('/api/UserDetail', this.user).then(function (result) {
+        console.log(result);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -30157,7 +30175,44 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("FIRST")])
+  return _c(
+    "form",
+    {
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.onsubmit($event)
+        }
+      }
+    },
+    [
+      _c("span", [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.user.id,
+              expression: "user.id"
+            }
+          ],
+          staticClass: "input",
+          attrs: { type: "text", name: "name" },
+          domProps: { value: _vm.user.id },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.user, "id", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("button", [_vm._v(" 提交 ")])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
