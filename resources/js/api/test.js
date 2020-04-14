@@ -1,5 +1,5 @@
 export default {
-    get : function() {
-        return axios.get('http://homestead.test/api/test');
+    getAll: function() {
+        return axios.get('/api/showall');
     }
 }

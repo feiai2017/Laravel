@@ -1,32 +1,27 @@
 <template>
-    <form @submit.prevent="onsubmit">
-        <span><input class="input" type="text" name="name" v-model="user.id"></span>
-        <button> 提交 </button>
-
-    </form>
-
+    <div id="first">
+        <ul>
+            <li v-for="test in tests">{{ test.name }}</li>
+        </ul>
+        <Form></Form>
+    </div>
 </template>
 
 <script>
+    import Form from '../components/FormComponent'
     export default {
         name: "First",
-        data:function () {
-            return {
-                user:{
-                    id:1
-                }
-            }
+        component: {
+            Form
         },
-        methods:{
-            onsubmit : function() {
-                console.log(this.user);
-                axios.post('/api/UserDetail', this.user)
-                    .then(result => {
-                        console.log(result);
-                    })
+        created() {
+            this.$store.dispatch('loadTests');
+        },
+        computed:{
+            tests(){
+                return this.$store.getters.getTests;
             }
         }
-
     }
 </script>
 

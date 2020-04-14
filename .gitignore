@@ -14,3 +14,4 @@ yarn-error.log
 .idea/*.*
 /public/js/app.js
 .idea/
+/.idea/workspace.xml

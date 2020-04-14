@@ -28,4 +28,10 @@ class TestController extends Controller
         Log::debug('test: ' . json_encode($test));
 
     }
+
+    public function all() {
+        $ones = Test::all();
+        Log::debug('ones: ' . json_encode($ones));
+        return response()->json($ones);
+    }
 }
