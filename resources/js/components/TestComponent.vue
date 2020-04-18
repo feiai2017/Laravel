@@ -64,8 +64,7 @@
             </div>
 
             <div class="links">
-                <!--<a href="https://laravel.com/docs">文档</a>-->
-                <a v-on:click="test">文档</a>
+                <a href="https://laravel.com/docs">文档</a>
                 <a href="https://laracasts.com">视频</a>
                 <a href="https://laravel-news.com">新闻</a>
                 <a href="https://nova.laravel.com">Nova</a>
@@ -77,14 +76,5 @@
 </template>
 
 <script>
-    export default {
-        created() {
-            alert('11111');
-        },
-        methods:{
-            test:function () {
-                alert(22222);
-            }
-        }
-    }
+    export default {}
 </script>

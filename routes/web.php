@@ -22,6 +22,21 @@ Route::get('user/{id}', 'UserController@show');
 Route::get('test', 'TestController@showall');
 Route::get('test/save', 'TestController@save');
 
+Route::get('reborn', function () {
+    return view('pages.Index');
+});
+Route::get('yangzhi', function () {
+    return view('pages.yangzhi');
+});
+
+Route::get('bingli', function () {
+    return view('pages.bingli');
+});
+
+Route::get('binglier', function () {
+    return view('pages.binglier');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -32,5 +47,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('info', function() {
-    return view('info1');
+    return view('info');
 });
