@@ -32,5 +32,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('info', function() {
-    return view('info');
+    return view('info1');
 });
