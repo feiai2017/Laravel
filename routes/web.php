@@ -23,7 +23,7 @@ Route::get('test', 'TestController@showall');
 Route::get('test/save', 'TestController@save');
 
 Route::get('reborn', function () {
-    return view('pages.Index');
+    return view('pages.index');
 });
 Route::get('yangzhi', function () {
     return view('pages.yangzhi');
