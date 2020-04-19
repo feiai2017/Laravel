@@ -17,57 +17,32 @@
                 <div class="page_single layout_fullwidth_padding">
 
                     <div class="buttons-row">
-                        <a href="#tab1" class="tab-link active button">心</a>
-                        <a href="#tab2" class="tab-link button">肝</a>
-                        <a href="#tab3" class="tab-link button">脾</a>
-                        <a href="#tab4" class="tab-link button">肺</a>
+                        @foreach ($bingliBigs as $bingliBig)
+                            @if ($loop->first)
+                                <a href="#tab1" class="tab-link active button">{{ $bingliBig->name }}</a>
+                                @continue
+                            @endif
+                                <a href="#tab{{ $loop->iteration }}" class="tab-link button">{{ $bingliBig->name }}</a>
+                        @endforeach
                     </div>
 
                     <div class="tabs-animated-wrap">
                         <div class="tabs">
-                            <div id="tab1" class="tab active">
-                                <a href="/binglier"><div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">心病1</div></a>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">心病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">心病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">心病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">心病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">心病1</div>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                            </div>
+                            @foreach ($bingliBigs as $bingliBig)
+                                @if ($loop->iteration == 1)
+                                    <div id="tab{{ $loop->iteration }}" class="tab active">
+                                @else
+                                    <div id="tab{{ $loop->iteration }}" class="tab">
+                                @endif
+                                        @foreach($bingliMids as $bingliMi)
+                                            @if($bingliMi->father_type_num == $bingliBig->type_num)
+                                                <a href="/binglier/{{ $bingliMi->type_num }}"><div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">{{ $bingliMi->name }}</div></a>
+                                            @endif
+                                        @endforeach
+                                        <p style="margin-top: 100px">{{ $bingliBig->discription }}</p>
+                                    </div>
+                            @endforeach
 
-                            <div id="tab2" class="tab">
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                            </div>
-                            <div id="tab3" class="tab">
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                            </div>
-                            <div id="tab4" class="tab">
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">肝病1</div>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>

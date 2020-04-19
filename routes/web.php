@@ -29,13 +29,9 @@ Route::get('yangzhi', function () {
     return view('pages.yangzhi');
 });
 
-Route::get('bingli', function () {
-    return view('pages.bingli');
-});
-
-Route::get('binglier', function () {
-    return view('pages.binglier');
-});
+Route::get('bingli', 'BingliController@getAll');
+Route::get('binglier/{type_num}', 'BingliController@getList');
+Route::get('bingliDetail/{id}', 'BingliController@getDetail');
 
 Auth::routes();
 

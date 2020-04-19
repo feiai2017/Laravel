@@ -15,3 +15,5 @@ yarn-error.log
 /public/js/app.js
 .idea/
 /.idea/workspace.xml
+/.idea/Laravel.iml
+/.idea/modules.xml
