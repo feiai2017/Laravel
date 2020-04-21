@@ -30,7 +30,8 @@ Route::get('yangzhi', function () {
 });
 
 Route::get('bingli', 'BingliController@getAll');
-Route::get('binglier/{type_num}', 'BingliController@getList');
+Route::get('binglier/{id}', 'BingliController@getList');
+Route::get('bingliList/{id}', 'BingliController@getDetailList');
 Route::get('bingliDetail/{id}', 'BingliController@getDetail');
 
 Auth::routes();

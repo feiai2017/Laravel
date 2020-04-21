@@ -35,8 +35,8 @@
                                     <div id="tab{{ $loop->iteration }}" class="tab">
                                 @endif
                                         @foreach($bingliMids as $bingliMi)
-                                            @if($bingliMi->father_type_num == $bingliBig->type_num)
-                                                <a href="/binglier/{{ $bingliMi->type_num }}"><div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">{{ $bingliMi->name }}</div></a>
+                                            @if($bingliMi->father_type_num == $bingliBig->id)
+                                                <a href="/binglier/{{ $bingliMi->id}}"><div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">{{ $bingliMi->name }}</div></a>
                                             @endif
                                         @endforeach
                                         <p style="margin-top: 100px">{{ $bingliBig->discription }}</p>

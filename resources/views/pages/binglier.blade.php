@@ -22,8 +22,8 @@
                             <li class="bg{{ $loop->iteration % 6 }}" style="margin-top: 5px;">
                                 <div class="feat_small_icon"><img src="{{ voyager::image($bingliSmall->image) }}" alt="" title="" /></div>
                                 <div class="feat_small_details">
-                                    <h4><a href="bingliDetail/{{ $bingliSmall->id }}">{{ $bingliSmall->name }}</a></h4>
-                                    <a href="bingliDetail/{{ $bingliSmall->id }}">{{ $bingliSmall->description }}</a>
+                                    <h4><a href="bingliList/{{ $bingliSmall->id }}">{{ $bingliSmall->name }}</a></h4>
+                                    <a href="bingliList/{{ $bingliSmall->id }}">{{ $bingliSmall->description }}</a>
                                 </div>
                             </li>
                         @endforeach

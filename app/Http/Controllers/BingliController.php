@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\BingliBigs;
 use App\Models\BingliMids;
 use App\Models\BingliSmalls;
-use App\Models\BingliDetail;
+use App\Models\BingliDetails;
+use Illuminate\Support\Facades\Log;
 
 class BingliController extends Controller
 {
@@ -21,16 +22,26 @@ class BingliController extends Controller
         ]);
     }
 
-    public function getList($type_num) {
-        $res = BingliSmalls::where('father_type_num', $type_num)
+    public function getList($id) {
+        $res = BingliMids::find($id)
+            ->getSmalls()
             ->get();
 
         return view('pages.binglier', ['bingliSmalls' => $res]);
 
     }
 
+    public function getDetailList($id) {
+
+        $res = BingliSmalls::find($id)
+            ->getDetails()
+            ->get();
+
+        return view('pages.bingliList', ['bingliList' => $res]);
+    }
+
     public function getDetail($id) {
-        $res = BingliDetail::findOrFail($id);
+        $res = BingliDetails::findOrFail($id);
         return view('pages.bingliDetail', ['bingliDetail' => $res]);
     }
 }
