@@ -16,13 +16,13 @@
 
                 <div class="page_single layout_fullwidth_padding">
 
-                    <div class="buttons-row">
+                    <div class="buttons-row" style="display: -webkit-box">
                         @foreach ($bingliBigs as $bingliBig)
                             @if ($loop->first)
-                                <a href="#tab1" class="tab-link active button">{{ $bingliBig->name }}</a>
+                                <a href="#tab1" class="tab-link active button" style="width: 25%!important;display:inline-block !important;display:-webkit-box;">{{ $bingliBig->name }}</a>
                                 @continue
                             @endif
-                                <a href="#tab{{ $loop->iteration }}" class="tab-link button">{{ $bingliBig->name }}</a>
+                                <a href="#tab{{ $loop->iteration }}" style="width: 25%!important;display:inline-block !important;display:-webkit-box;" class="tab-link button">{{ $bingliBig->name }}</a>
                         @endforeach
                     </div>
 
@@ -36,10 +36,10 @@
                                 @endif
                                         @foreach($bingliMids as $bingliMi)
                                             @if($bingliMi->father_type_num == $bingliBig->id)
-                                                <a href="/binglier/{{ $bingliMi->id}}"><div class="item_price" style="float: left;margin: 4px 4px 4px 0px;width: 18%;font-size: 14px">{{ $bingliMi->name }}</div></a>
+                                                <a href="/binglier/{{ $bingliMi->id}}"><div class="item_price" style="float: left;margin: 4px 4px 4px 0px;height:2.5em;line-height:2.5em;width:auto;padding: 0px 1em;font-size: 14px">{{ $bingliMi->name }}</div></a>
                                             @endif
                                         @endforeach
-                                        <p style="margin-top: 100px">{{ $bingliBig->discription }}</p>
+                                        <p style="margin-top: 100px">{!!  $bingliBig->discription !!}</p>
                                     </div>
                             @endforeach
 
