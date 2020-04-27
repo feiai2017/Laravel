@@ -22,7 +22,7 @@
                             <div class="post_entry">
                                 @if($loop->iteration % 2 ==1)
                                     <div class="post_thumb">
-                                        <a href="bingliDetail/{{ $binglione->id }}"><img src="{{ voyager::image($binglione->image_description) }}" alt="" title="" /></a>
+                                        <a href="bingliDetail/{{ $binglione->id }}"><img src="{{ voyager::image($binglione->image_description) }}" alt="" title="" style="max-height: 500px"/></a>
                                         <div class="post_thumb_details">
                                             <a href="post_thumb_details" class="open-popup" data-popup=".popup-social"></a>
                                         </div>

@@ -19,10 +19,10 @@
                     <div class="buttons-row" style="display: -webkit-box">
                         @foreach ($bingliBigs as $bingliBig)
                             @if ($loop->first)
-                                <a href="#tab1" class="tab-link active button" style="width: 25%!important;display:inline-block !important;display:-webkit-box;">{{ $bingliBig->name }}</a>
+                                <a href="#tab1" class="tab-link active button" style="width: 24%!important;display:inline-block !important;display:-webkit-box;">{{ $bingliBig->name }}</a>
                                 @continue
                             @endif
-                                <a href="#tab{{ $loop->iteration }}" style="width: 25%!important;display:inline-block !important;display:-webkit-box;" class="tab-link button">{{ $bingliBig->name }}</a>
+                                <a href="#tab{{ $loop->iteration }}" style="width: 24%!important;display:inline-block !important;display:-webkit-box;" class="tab-link button">{{ $bingliBig->name }}</a>
                         @endforeach
                     </div>
 

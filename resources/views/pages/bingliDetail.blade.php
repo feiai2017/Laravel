@@ -32,7 +32,7 @@
                 <div class="page_single layout_fullwidth_padding">
                     <div class="post_single">
                         <p>
-                            {{ $bingliDetail->content }}
+                            {!! $bingliDetail->content !!}
                         </p>
                     </div>
                 </div>
