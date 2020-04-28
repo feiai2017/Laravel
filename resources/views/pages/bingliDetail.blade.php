@@ -14,7 +14,7 @@
 
             <div id="pages_maincontent">
 
-                <a href="blog.html" class="backto"><img src="images/icons/green/back.png" alt="" title="" /></a>
+                <a href="javascript:history.back()" class="backto"><img src="images/icons/green/back.png" alt="" title="" /></a>
                 <h2 class="blog_title">{{ $bingliDetail->name }}</h2>
 
                 <!-- Slider -->

@@ -26,14 +26,15 @@
 <div class="panel panel-left panel-reveal">
     <nav class="sidebar-nav">
         <ul>
-            <li><a href="index.html" class="close-panel"><img src="images/icons/white/home.png" alt="" title="" /><span>Home</span></a></li>
-            <li><a href="about.html" class="close-panel"><img src="images/icons/white/mobile.png" alt="" title="" /><span>About</span></a></li>
-            <li><a href="features.html" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>Features</span></a></li>
-            <li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>Login</span></a></li>
-            <li><a href="team.html" class="close-panel"><img src="images/icons/white/users.png" alt="" title="" /><span>Team</span></a></li>
-            <li><a href="blog.html" class="close-panel"><img src="images/icons/white/blog.png" alt="" title="" /><span>Blog</span></a></li>
-            <li><a href="photos.html" class="close-panel"><img src="images/icons/white/photos.png" alt="" title="" /><span>Photos</span></a></li>
-            <li><a href="videos.html" class="close-panel"><img src="images/icons/white/video.png" alt="" title="" /><span>Videos</span></a></li>
+            <li><a href="/reborn" class="close-panel"><img src="images/icons/white/home.png" alt="" title="" /><span>首页</span></a></li>
+            <li><a href="/bingli" class="close-panel"><img src="images/icons/white/mobile.png" alt="" title="" /><span>病理诊断</span></a></li>
+            <li><a href="features.html" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>养殖技能</span></a></li>
+            <li><a href="features.html" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>通风技巧</span></a></li>
+            <!--<li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>通风技巧</span></a></li>-->
+            <li><a href="team.html" class="close-panel"><img src="images/icons/white/users.png" alt="" title="" /><span>拍照诊断</span></a></li>
+            <li><a href="blog.html" class="close-panel"><img src="images/icons/white/blog.png" alt="" title="" /><span>化学实验室</span></a></li>
+            <li><a href="photos.html" class="close-panel"><img src="images/icons/white/photos.png" alt="" title="" /><span>综合信息</span></a></li>
+            <!--<li><a href="videos.html" class="close-panel"><img src="images/icons/white/video.png" alt="" title="" /><span>Videos</span></a></li>
             <li><a href="music.html" class="close-panel"><img src="images/icons/white/music.png" alt="" title="" /><span>Music</span></a></li>
             <li><a href="shop.html" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Shop</span></a></li>
             <li><a href="cart.html" class="close-panel"><img src="images/icons/white/cart.png" alt="" title="" /><span>Cart</span></a></li>
@@ -41,7 +42,7 @@
             <li><a href="toggle.html" class="close-panel"><img src="images/icons/white/toggle.png" alt="" title="" /><span>Toggle</span></a></li>
             <li><a href="tabs.html" class="close-panel"><img src="images/icons/white/tabs.png" alt="" title="" /><span>Tabs</span></a></li>
             <li><a href="form.html" class="close-panel"><img src="images/icons/white/form.png" alt="" title="" /><span>Forms</span></a></li>
-            <li><a href="contact.html" class="close-panel"><img src="images/icons/white/contact.png" alt="" title="" /><span>Contact</span></a></li>
+            <li><a href="contact.html" class="close-panel"><img src="images/icons/white/contact.png" alt="" title="" /><span>Contact</span></a></li>-->
         </ul>
     </nav>
 </div>

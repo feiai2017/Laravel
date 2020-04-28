@@ -29,12 +29,12 @@
                                     </div>
                                     <div class="post_details" style="margin-top: 5px;">
                                         <h2><a href="bingliDetail/{{ $binglione->id }}">{{ $binglione->name }}</a></h2>
-                                        <p>{{ $binglione->description }}</p>
+                                        <p style="max-height: 120px;overflow: hidden">{{ $binglione->description }}</p>
                                     </div>
                                 @else
                                     <div class="post_details" style="margin-top: 5px;">
                                         <h2><a href="bingliDetail/{{ $binglione->id }}">{{ $binglione->name }}</a></h2>
-                                        <p>{{ $binglione->description }}</p>
+                                        <p style="max-height: 120px;overflow: hidden">{{ $binglione->description }}</p>
                                     </div>
                                     <div class="post_thumb">
                                         <a href="bingliDetail/{{ $binglione->id }}"><img src="{{ voyager::image($binglione->image_description) }}" alt="" title="" /></a>
