@@ -21,7 +21,7 @@
                 <div class="swiper-container-pages swiper-init" data-effect="slide" data-pagination=".swiper-pagination">
                     <div class="swiper-wrapper">
 
-                        @if(!empty($binliDetail->image))
+                        @if($bingliDetail->image)
                         @foreach(json_decode($bingliDetail->image, true) as $image)
                             <div class="swiper-slide">
                                 <img src="{{ voyager::image($image) }}" alt="" title="" />

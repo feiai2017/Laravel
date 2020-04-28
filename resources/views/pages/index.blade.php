@@ -28,12 +28,12 @@
         <ul>
             <li><a href="/reborn" class="close-panel"><img src="images/icons/white/home.png" alt="" title="" /><span>首页</span></a></li>
             <li><a href="/bingli" class="close-panel"><img src="images/icons/white/mobile.png" alt="" title="" /><span>病理诊断</span></a></li>
-            <li><a href="features.html" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>养殖技能</span></a></li>
+            <!--<li><a href="features.html" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>养殖技能</span></a></li>
             <li><a href="features.html" class="close-panel"><img src="images/icons/white/features.png" alt="" title="" /><span>通风技巧</span></a></li>
-            <!--<li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>通风技巧</span></a></li>-->
+            <li><a href="#" data-popup=".popup-login" class="open-popup close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>通风技巧</span></a></li>
             <li><a href="team.html" class="close-panel"><img src="images/icons/white/users.png" alt="" title="" /><span>拍照诊断</span></a></li>
             <li><a href="blog.html" class="close-panel"><img src="images/icons/white/blog.png" alt="" title="" /><span>化学实验室</span></a></li>
-            <li><a href="photos.html" class="close-panel"><img src="images/icons/white/photos.png" alt="" title="" /><span>综合信息</span></a></li>
+            <li><a href="photos.html" class="close-panel"><img src="images/icons/white/photos.png" alt="" title="" /><span>综合信息</span></a></li>-->
             <!--<li><a href="videos.html" class="close-panel"><img src="images/icons/white/video.png" alt="" title="" /><span>Videos</span></a></li>
             <li><a href="music.html" class="close-panel"><img src="images/icons/white/music.png" alt="" title="" /><span>Music</span></a></li>
             <li><a href="shop.html" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Shop</span></a></li>
@@ -118,13 +118,16 @@
 
                     <nav class="main-nav">
                         <ul>
-                            <li><a href="/yangzhi"><img src="images/icons/white/home.png" alt="" title="" /><span>养殖技能</span></a></li>
                             <li><a href="/bingli"><img src="images/icons/white/user.png" alt="" title="" /><span>病理诊断</span></a></li>
                             <li><a href="features.html"><img src="images/icons/white/settings.png" alt="" title="" /><span>通风技巧</span></a></li>
 
-                            <li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>拍照诊断</span></a></li>
-                            <li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /><span>化学实验室</span></a></li>
+                            <li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>敬请期待</span></a></li>
+                            <li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>敬请期待</span></a></li>
+                            <li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>敬请期待</span></a></li>
+                            <li><a href="blog.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>敬请期待</span></a></li>
+                            <!--<li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /><span>化学实验室</span></a></li>
                             <li><a href="videos.html"><img src="images/icons/white/video.png" alt="" title="" /><span>综合信息</span></a></li>
+                            <li><a href="zhi.html"><img src="images/icons/white/home.png" alt="" title="" /><span>养殖技能</span></a></li>-->
 
 
                             <!--<li><a href="shop.html"><img src="images/icons/white/shop.png" alt="" title="" /><span>SHOP</span></a></li>
